@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="myJavascript.js"></script>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+
+    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnolDrUSX-NZBCKTjPLoliz1NLTFzQ2zZMM_Pz6x91A8mwz34r" alt="">
+    <br>
+    <a href="http://iltalehti.fi">iltalehti</a>
+    <br>
+    <script>
+        var x = 3;
+        var y = 5;
+        var text = "Text " + x + y;
+        console.log(text);
+        text = x + y + " Text";
+        console.log(text);
+        var number = myFirstFunction(5);
+        console.log(number);
+
+        var array = ["Audi", "MB", "Volvo", "Opel"];
+
+        for (var i=0; i<array.length ;i++){
+            console.log(array[i]);
+        }
+        for(var text in array){
+            console.log(text);
+        }
+
+        document.write("you are using" + navigator.appName);
+
+        if(confirm("would you like to change the picture")){
+            document.images[0].src ="https://www.mercedes-benz.fi/passengercars/mercedes-benz-cars/models/gle/coupe-c167/explore/highlights/_jcr_content/contentgallerycontainer/par/contentgallery/par/contentgallerytile_58586423/image.MQ6.8.20191119092227.jpeg";
+        }
+
+    </script>
+    
+</body>
+</html>
