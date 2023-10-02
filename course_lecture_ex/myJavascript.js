@@ -6,3 +6,9 @@ function myFirstFunction(number){
     return 10;
 
 }
+
+function buttonFunction(){
+    alert('This is event listener function');
+    var element = document.getElementById("demo");
+    element.innerHTML="This is new text";
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="myJavascript.js"></script>
+</head>
+<body onload="alert('page is loaded!')">
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <button onclick="alert('button is clicked!')">Click me</button>
+    <button onclick="myFirstFunction(10)">Function button</button>
+    <button onmouseover="alert('On me!')">Over me</button>
+    <button id="myButton">MyButton</button>
+    <p id='demo'></p>
+
+    <script>
+        var element=document.getElementById('myButton');
+        element.addEventListener('click', buttonFunction);
+    </script>
+    
+</body>
+</html>

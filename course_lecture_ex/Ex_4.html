@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document DOM</title>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <h2 id="heading2">Heading 2</h2>
+    <h2>Heading 2 without id</h2>
+    <div class="square"></div>
+    <script>
+        var heading2 = document.getElementById('heading2');
+        heading2.innerHTML = "Changed text";
+
+        var headings = document.getElementsByTagName('h2');
+        headings[1].innerHTML="This is changed as well";
+
+        for(var i=0; i < headings.length ; i++){
+            headings[i].style.color = "red";
+        }
+
+        document.body.style.background = "yellow";
+        headings[1].style.display = "none";
+        headings[1].style.display = "block";
+
+        var item = document.getElementsByClassName('square');
+        var y = item[0];
+
+        y.style.position = 'relative';
+        y.style.left = 100 + 'px';
+
+        /* setInterval(function(){
+            doMove();
+        }, 1000);
+
+        function doMove(){
+            var topVal = parseInt(y.style.left);
+            y.style.left = (topVal + 10) + 'px';
+            console.log("Move to " + topVal + 'px');
+        } */
+
+        let newItem = document.createElement('p');
+        newItem.innerHTML = "New content!";
+        newItem.setAttribute('id', 'newData');
+        document.body.appendChild(newItem);
+
+    </script>
+</body>
+</html>
